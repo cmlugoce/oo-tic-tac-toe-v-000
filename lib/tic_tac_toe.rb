@@ -1,4 +1,4 @@
-
+require 'pry'
 class TicTacToe
   def initialize(board = nil)
      @board = board || Array.new(9, " ")
@@ -22,7 +22,7 @@ class TicTacToe
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
-
+binding.pry
   def input_to_index(user_input)
     user_input.to_i - 1
   end
